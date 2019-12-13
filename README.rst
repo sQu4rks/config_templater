@@ -39,11 +39,26 @@ Given a configuration template file *test.yml.conftpl* like this:
 .. code-block:: 
         
         ---
-        access_token: {{ API_ACCESS_TOKEN }}
-        data_url: {{ DATA_URL }}
+        access_token: "{{ API_ACCESS_TOKEN }}"
+        data_url: "{{ DATA_URL }}"
 
-You can do the following to replace these 
 
+You can do the following to generate a configuration file:
+
+.. code-block:: 
+        
+        # Set environment variables
+        $ export API_ACCESS_TOKEN="tdfkls0dkl1j313"
+        $ export DATA_URL="https://custome_domain.io/webhook"
+        $ python -m config_templater 
+
+This will generate the following configuration in *test.yml* 
+
+.. code-block:: 
+
+        ---
+        access_token: "tdfkls0dkl1j313"
+        data_url: "https://custome_domain.io/webhook"        
 Credits
 -------
 

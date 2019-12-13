@@ -28,7 +28,7 @@ Usage
 -----
 
 You should run this script as a module. Executing in a directory will recursively parse the entire
-directory for `.conftpl` files and replace the jinja2 variables included with the corresponding 
+directory for *.conftpl* files and replace the jinja2 variables included with the corresponding 
 environment variables.
 
 Example
@@ -58,7 +58,8 @@ This will generate the following configuration in *test.yml*
 
         ---
         access_token: "tdfkls0dkl1j313"
-        data_url: "https://custome_domain.io/webhook"        
+        data_url: "https://custome_domain.io/webhook"    
+    
 Credits
 -------
 

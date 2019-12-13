@@ -10,7 +10,10 @@ with open('README.rst') as readme_file:
 with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
-requirements = [ ]
+requirements = [ 
+    'Jinja2==2.10.3',
+    'MarkupSafe==1.1.1'
+]
 
 setup_requirements = [ ]
 

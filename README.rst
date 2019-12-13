@@ -20,13 +20,24 @@ Simple python module to generate configurations from templates
 
 
 * Free software: MIT license
-* Documentation: https://config-templater.readthedocs.io.
 
+Usage
+-----
 
-Features
---------
+You should run this script as a module. Executing in a directory will recursively parse the entire
+directory for `.conftpl` files and replace the jinja2 variables included with the corresponding 
+environment variables.
 
-* TODO
+Example
+-------
+
+Given a configuration template file `test.yml.conftpl` like this: 
+
+.. code:: 
+        ---
+        access_token: {{ API_ACCESS_TOKEN }}
+        data_url: {{ DATA_URL }}
+
 
 Credits
 -------

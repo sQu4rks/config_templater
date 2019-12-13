@@ -33,7 +33,7 @@ Example
 
 Given a configuration template file *test.yml.conftpl* like this: 
 
-.. code-blcok:: 
+.. code-block:: 
         
         ---
         access_token: {{ API_ACCESS_TOKEN }}

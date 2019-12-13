@@ -31,9 +31,10 @@ environment variables.
 Example
 -------
 
-Given a configuration template file `test.yml.conftpl` like this: 
+Given a configuration template file *test.yml.conftpl* like this: 
 
-.. code:: 
+.. code-blcok:: 
+        
         ---
         access_token: {{ API_ACCESS_TOKEN }}
         data_url: {{ DATA_URL }}

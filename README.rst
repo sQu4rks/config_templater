@@ -16,7 +16,10 @@ Config Templater
 
 
 
-Simple python module to generate configurations from templates
+Simple python module to generate configurations from templates.
+
+This is useful if you want to use configuration files for local development but want to 
+use environment variables for deployment (i.e. in a container environment).
 
 
 * Free software: MIT license
@@ -39,6 +42,7 @@ Given a configuration template file *test.yml.conftpl* like this:
         access_token: {{ API_ACCESS_TOKEN }}
         data_url: {{ DATA_URL }}
 
+You can do the following to replace these 
 
 Credits
 -------
